@@ -1,0 +1,6 @@
+{
+  "name": "Le Sorgenti Casa Vacanze",
+  "description": "Soggiorno esclusivo ad Altipiani di Arcinazzo (Lazio). Camere confortevoli con spa bath, giardino, piscina e ristorante Le Sorgenti 2.0.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-forest: #293B30;
+    --color-forest-dark: #1F2E25;
+    --color-forest-light: #364D3F;
+    --color-olive: #737C65;
+    --color-ivory: #F6F4ED;
+    --color-ivory-light: #FCFBF7;
+    --color-charcoal: #252923;
+    --color-stone: #DDD8CD;
+    --color-stone-light: #EBE8E1;
+    --color-earth: #9A8069;
+    --color-body: #595C55;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: var(--color-ivory);
+    color: var(--color-charcoal);
+  }
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Editorial line clamp and fine hairline borders */
+.border-stone-hairline {
+  border-color: rgba(221, 216, 205, 0.6);
+}
+
+/* Sorgenti signature frame treatment */
+.sorgenti-frame {
+  position: relative;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sorgenti-frame::after {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border: 1px solid rgba(115, 124, 101, 0.2);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sorgenti-frame:hover::after {
+  opacity: 1;
+}
